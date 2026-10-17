@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 質問、アイデア、要望
+    url: https://github.com/Emirp36251/SpanEngine/discussions
+    about: 使い方の質問や、機能の要望は、Discussions へ。
+  - name: マニュアルとスクリプトガイド
+    url: https://emirp36251.github.io/SpanEngine/
+    about: まず、サイトを見てください。

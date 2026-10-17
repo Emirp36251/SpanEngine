@@ -1,0 +1,42 @@
+name: 不具合の報告
+description: Span Engine の動きがおかしいときに、報告する
+title: "[不具合] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        報告ありがとうございます。**この Issue は、誰でも読めます。** ログには、パスにユーザー名が入るなど、個人の情報が含まれることがあります。貼る前に、中身を確かめてください。
+  - type: input
+    id: version
+    attributes:
+      label: Span Engine のバージョン
+      description: Hub の左側に表示されます。例 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境
+      description: Windows のバージョン、GPU の名前など。分かる範囲で。
+      placeholder: "Windows 11 23H2 / NVIDIA GeForce RTX ..."
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起こりましたか
+      description: 期待していた動きと、実際の動きを、書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現の手順
+      placeholder: |
+        1. プロジェクトを作る
+        2. ...
+  - type: textarea
+    id: log
+    attributes:
+      label: ログ
+      description: "`%LOCALAPPDATA%\\SpanEngine\\Logs\\SpanEngine.log` の、関係する部分。画面の画像も、貼れます。"
+      render: text
